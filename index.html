@@ -153,16 +153,27 @@
       .list{ grid-template-columns: 1fr; }
       .hero{ padding: 22px }
     }
-      /* Alinear visualmente los enlaces de contacto */
-      .card a {
-      display: inline-flex;
-      align-items: center;
-      vertical-align: middle;
+      /* Alinear visualmente los enlaces y emojis del bloque de contacto */
+        .card p.muted {
+         display: flex;
+         flex-wrap: wrap;
+        align-items: center;
+        gap: 6px;
+        line-height: 1.5;
     }
 
-      .card a[href^="mailto"] {
-       margin-left: 4px;
+      .card p.muted a {
+       display: inline-flex;
+      align-items: center;
+      vertical-align: middle;
+      text-decoration: none;
+      color: var(--brand);
     }
+
+    .card p.muted a:hover {
+    text-decoration: underline;
+    }
+
 
     
   </style>
